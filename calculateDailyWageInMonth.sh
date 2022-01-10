@@ -37,8 +37,9 @@ salary=$(($totalWorkingHour * $PAY_PER_HOUR));
 
 echo "Employee monthly wage earned : $salary $ (Total working hour : $totalWorkingHour)"
 
+echo ${dailyWage[@]};
+
 for index in ${!dailyWage[@]}
 do
 	echo "On Day $((index+1)) : " ${dailyWage[index]} "$";
 done
-
